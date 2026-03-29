@@ -1,6 +1,6 @@
 ---
-- hots: jenkins-master
-  become: root
+- hosts: jenkins-master
+  become: true
   tasks:
     - name: add jenkins key
       apt_key:
